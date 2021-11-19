@@ -18,6 +18,8 @@ public class PatrolAi : EnemyAI
     public Transform movespot;
 
     private Vector2 dir;
+
+    public LayerMask mask;
     
     void Start()
     {

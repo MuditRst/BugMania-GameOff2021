@@ -50,10 +50,10 @@ public class EnemyAI : MonoBehaviour
                isIdle = false;
                idleTimer = 0;
             }
-            Debug.Log("Idle Timer: "+  idleTimer);
+            //Debug.Log("Idle Timer: "+  idleTimer);
         }
 
-        Debug.Log(timer);
+        //Debug.Log(timer);
     }
 
 

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class EnemyAttack : EnemyAI
 {
     public float timeBetweenAttacks = 7f;
-    public float attackDamage = 1f;
+    public float attackDamage = 10f;
 
     public GameObject EnemyHerd;
 

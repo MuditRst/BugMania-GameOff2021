@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Debuff : MonoBehaviour
+public class Debuff : Enemy
 {
     [SerializeField]
     bool isInRange = false;

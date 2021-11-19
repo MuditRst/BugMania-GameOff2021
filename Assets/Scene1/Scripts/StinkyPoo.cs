@@ -8,7 +8,17 @@ public class StinkyPoo : MonoBehaviour
 {
     GameObject player;
 
+    float maxHealth = 5f;
+
+    public GameObject bombIndicator;
+
+    public HealthBar stinkyPooHealthBar;
+
     float cooldown = 5f;
+
+    [SerializeField]
+    int bombShown=0;
+ 
 
     public float health = 5f;
     
@@ -28,7 +38,17 @@ public class StinkyPoo : MonoBehaviour
     
 
     void Update()
-    {
+    {   
+        stinkyPooHealthBar.setHealth(health,maxHealth);
+        if(GameObject.FindGameObjectWithTag("BombIndicator")){
+            Destroy(GameObject.FindGameObjectWithTag("BombIndicator"),0.5f);
+        }
+
+        if(Vector2.Distance(player.transform.position,this.transform.position) >= GetComponent<CircleCollider2D>().radius/2){
+            collided = false;
+        }
+
+
         if(cooldown <= 0 && bombPlanted){
             cooldown = 10f;
         }
@@ -48,10 +68,17 @@ public class StinkyPoo : MonoBehaviour
 
     IEnumerator BombCoolDown()
     {
-        if(cooldown <= 0){
+
+        if(cooldown <= 0.35f && bombShown <= 1 && collided){
+            Instantiate(bombIndicator,player.transform.position,Quaternion.identity);
+            bombShown++;
+        }
+
+        if(cooldown <= 0 && collided){
             yield return new WaitForSeconds(cooldown);
             Instantiate(stinkyPoo, player.transform.position, Quaternion.identity);
             bombPlanted = true;
+            bombShown = 0;
         }else{
             cooldown -= Time.deltaTime;
             bombPlanted = false;

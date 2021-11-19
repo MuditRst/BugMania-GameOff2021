@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - PlayerHead
+  - StinkyPoo
+  - wall
+  - BombIndicator
   layers:
   - Default
   - TransparentFX

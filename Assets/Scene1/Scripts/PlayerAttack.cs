@@ -25,7 +25,7 @@ public class PlayerAttack : MonoBehaviour{
     void Attack(GameObject other){
         Debug.Log("Attacking!");
         if(other.gameObject.tag == "StinkyPoo"){
-            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(1f);
+            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(5f);
         }
         other.GetComponent<Enemy>().TakeDamage(1f);
         
