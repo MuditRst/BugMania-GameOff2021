@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 
     public HealthBar healthBar;
 
-
+    AudioSource audioSrc;
     ParticleSystem particles;
 
     public GameObject corpse;
@@ -23,10 +23,16 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         particles = GetComponent<ParticleSystem>();
+        audioSrc = this.GetComponent<AudioSource>();
     }
     void Update()
     {
         healthBar.setHealth(health,maxHealth);
+
+        if(audioSrc.clip == null)
+        {
+            Debug.Log("No Audio!!!");
+        }
     }
 
     public void TakeDamage(float amount)
@@ -48,11 +54,20 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        StartCoroutine(playAudio());
         Instantiate(corpse, transform.position, transform.rotation);
         if(RandomDDrop() >= 1){
             Instantiate(drop, transform.position, transform.rotation);
         }
         Destroy(gameObject);
+    }
+
+    IEnumerator playAudio(){
+        audioSrc.Play();
+
+        while(audioSrc.isPlaying){
+            yield return null;
+        }
     }
 
 }
