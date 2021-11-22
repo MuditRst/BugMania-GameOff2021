@@ -15,6 +15,8 @@ public class EnemyAttack : EnemyAI
 
     GameObject player;
 
+    
+
 
     void Start()
     {
@@ -27,10 +29,12 @@ public class EnemyAttack : EnemyAI
         player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         StartCoroutine(Idle());
         Stop();
+        aiPath.canMove = false;
         if(idleTimer > 5f && isIdle == true){
             timer = 0;
             isIdle = false;
             idleTimer = 0;
+            aiPath.canMove = true;
         }
     }   
 

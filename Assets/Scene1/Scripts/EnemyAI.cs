@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Pathfinding;
 
 
 public class EnemyAI : MonoBehaviour
@@ -22,33 +23,35 @@ public class EnemyAI : MonoBehaviour
 
     protected bool isIdle = false;
 
+    public AIPath aiPath;
+
+    Vector2 dir;
 
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player");
+        aiPath.canMove = true;
     }
 
     void Update()
     {
-        Vector3 targetDir = target.transform.position - transform.position;
-        targetDir.Normalize();
-        movement = targetDir;
-        if(Vector2.Distance(transform.position, target.transform.position) > 5f){
-            GetComponent<PatrolAi>().enabled = true;
-        }
+       look();
     }
     
     void FixedUpdate(){
-
-        if(timer <= 10 && isIdle == false && Vector2.Distance(transform.position, target.transform.position) < 7f){
-            move(movement);
+        if(timer <= 10 && isIdle == false && Vector2.Distance(transform.position, target.transform.position) < 12f && aiPath.canMove){
+            StartCoroutine(CoolDown());
+            aiPath.canMove = true;
+            aiPath.maxSpeed = speed;
         }else{
             Stop();
+            aiPath.canMove = false;
             if(idleTimer > 5 && isIdle == true){
                timer = 0;
                isIdle = false;
                idleTimer = 0;
+               aiPath.canMove = true;
             }
             //Debug.Log("Idle Timer: "+  idleTimer);
         }
@@ -57,12 +60,11 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-    public void move(Vector2 direction){
-        StartCoroutine(CoolDown());
+    /*public void move(Vector2 direction){
         rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
         
         transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f);
-    }
+    }*/
 
     public void Stop(){
         StartCoroutine(Idle());
@@ -70,6 +72,13 @@ public class EnemyAI : MonoBehaviour
         /*if(Vector2.Distance(target.transform.position, transform.position) < 5f){
             GetComponentInChildren<EnemyAttack>().SpawnHerd();
         }*/
+    }
+
+
+    void look(){
+        dir = aiPath.desiredVelocity;
+
+        transform.right = dir;
     }
 
     IEnumerator CoolDown()

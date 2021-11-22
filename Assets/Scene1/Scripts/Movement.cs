@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        //Timer.instance.BeginTimer();
         originalsprite = GetComponent<SpriteRenderer>().sprite;
     }
 

@@ -28,7 +28,7 @@ public class HerdAI : EnemyAI
     }
 
     void FixedUpdate(){
-        move(movement);
+        //move(movement);
     }
 
     

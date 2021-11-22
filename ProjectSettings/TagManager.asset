@@ -12,6 +12,7 @@ TagManager:
   - Bomb
   - Obstacles
   - enemyPart
+  - ScreenShake
   layers:
   - Default
   - TransparentFX

@@ -17,6 +17,8 @@ public class PatrolAi : EnemyAI
 
     public Transform movespot;
 
+    public Transform raycastPoint;
+
     private Vector2 dir;
 
     public LayerMask mask;
@@ -44,6 +46,7 @@ public class PatrolAi : EnemyAI
         if(Vector2.Distance(GameObject.FindGameObjectsWithTag("Enemy")[0].transform.position,GameObject.FindGameObjectsWithTag("Enemy")[1].transform.position) <= 1f){
             movespot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         }
+        
         
 
         patrol(dir);
