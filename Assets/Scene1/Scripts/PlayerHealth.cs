@@ -30,6 +30,7 @@ public class PlayerHealth:MonoBehaviour{
 
 
     void Die(){
+        health = 0f;
         Destroy(gameObject);
 
         SceneManager.LoadScene(4);

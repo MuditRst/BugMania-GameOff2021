@@ -6,11 +6,11 @@ public class PatrolAi : EnemyAI
 {
     GameObject player;
 
-    float maxX = 8.78f;
-    float minX = -8.78f;
+    protected float maxX = 8.78f;
+    protected float minX = -8.78f;
 
-    float maxY = 3.56f;
-    float minY = -3.56f;
+    protected float maxY = 3.56f;
+    protected float minY = -3.56f;
     public float speed = 5f;
     private float startwaittime = 4.5f;
     private float waittime;
@@ -40,6 +40,11 @@ public class PatrolAi : EnemyAI
             enabled = false;
             //isIdle = false;
         }
+
+        if(Vector2.Distance(GameObject.FindGameObjectsWithTag("Enemy")[0].transform.position,GameObject.FindGameObjectsWithTag("Enemy")[1].transform.position) <= 1f){
+            movespot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        }
+        
 
         patrol(dir);
     }

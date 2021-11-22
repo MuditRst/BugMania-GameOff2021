@@ -16,6 +16,10 @@ public class HealthBar : MonoBehaviour{
 
         slider.value = health;
         slider.maxValue = 10f;
+
+        if(GameObject.FindGameObjectWithTag("Player") == null){
+            slider.value = 0;
+        }
     }
 
     void Update(){

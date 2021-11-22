@@ -17,7 +17,7 @@ public class bomb : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            anim.SetBool("isExplode", true);
+            anim.SetBool("isExplosion", true);
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
             Destroy(gameObject,0.5f);
             //anim.SetBool("isExplode", false);

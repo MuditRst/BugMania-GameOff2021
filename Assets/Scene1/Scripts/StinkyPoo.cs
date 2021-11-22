@@ -8,7 +8,7 @@ public class StinkyPoo : MonoBehaviour
 {
     GameObject player;
 
-    float maxHealth = 5f;
+    float maxHealth = 20f;
 
     public GameObject bombIndicator;
 
@@ -20,7 +20,7 @@ public class StinkyPoo : MonoBehaviour
     int bombShown=0;
  
 
-    public float health = 5f;
+    float health = 20f;
     
     [SerializeField]
     bool canMove,collided,bombPlanted;
@@ -38,7 +38,7 @@ public class StinkyPoo : MonoBehaviour
     
 
     void Update()
-    {   
+    {
         stinkyPooHealthBar.setHealth(health,maxHealth);
         if(GameObject.FindGameObjectWithTag("BombIndicator")){
             Destroy(GameObject.FindGameObjectWithTag("BombIndicator"),0.5f);

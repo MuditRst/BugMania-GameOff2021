@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour{
     bool CanAttack;
 
     void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.tag == "Enemy"){
+        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "StinkyPoo"){
             enemy = other.gameObject;
             CanAttack = true;
         }
@@ -23,11 +23,9 @@ public class PlayerAttack : MonoBehaviour{
     }
 
     void Attack(GameObject other){
-        Debug.Log("Attacking!");
-        if(other.gameObject.tag == "StinkyPoo"){
-            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(5f);
+        if(other.gameObject.tag == "StinkyPoo" && Vector2.Distance(transform.position, other.transform.position) <= 1f){
+            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(2.5f);
         }
         other.GetComponent<Enemy>().TakeDamage(1f);
-        
     }
 }
