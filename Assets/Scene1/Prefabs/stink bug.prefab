@@ -101,8 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombIndicator: {fileID: 116687362754784905, guid: 7f581cbd03bc15442a0acc80868a9b1f, type: 3}
   stinkyPooHealthBar: {fileID: 8375320272250519522}
+  stinkyPooCorpse: {fileID: 6173231881240335779, guid: 8cde5aaebe7d23a409ddcfa00b1851f3, type: 3}
   bombShown: 0
-  health: 5
   canMove: 0
   collided: 0
   bombPlanted: 0

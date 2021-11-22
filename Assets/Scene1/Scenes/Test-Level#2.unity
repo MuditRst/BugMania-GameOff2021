@@ -2378,7 +2378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182299189330927544, guid: 100468df68c284d4bba0c237163cda64, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4182299189330927549, guid: 100468df68c284d4bba0c237163cda64, type: 3}
       propertyPath: m_RootOrder
@@ -15728,10 +15728,6 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 911437557}
-    - target: {fileID: 3359871753844896820, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 2057874275}
     - target: {fileID: 3359871753844896821, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -39167,10 +39163,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: stink bug
       objectReference: {fileID: 0}
-    - target: {fileID: 4182299189330927544, guid: 100468df68c284d4bba0c237163cda64, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4182299189330927549, guid: 100468df68c284d4bba0c237163cda64, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54166,17 +54158,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6666667, y: 0.6666667}
   m_EdgeRadius: 0
---- !u!114 &2057874275 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 808612470723013012, guid: 638af80d09e3c144f9a4ada958431473, type: 3}
-  m_PrefabInstance: {fileID: 1739174742}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d907d98f8f47a4fbf4cf7bf1c13271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2058897226
 GameObject:
   m_ObjectHideFlags: 0

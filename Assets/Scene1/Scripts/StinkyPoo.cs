@@ -14,6 +14,8 @@ public class StinkyPoo : MonoBehaviour
 
     public HealthBar stinkyPooHealthBar;
 
+    public GameObject stinkyPooCorpse;
+
     float cooldown = 5f;
 
     [SerializeField]
@@ -98,6 +100,7 @@ public class StinkyPoo : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "Player"){
             col.gameObject.GetComponent<PlayerHealth>().TakeDamage(25f);
+            Instantiate(stinkyPooCorpse, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }
     }
@@ -105,6 +108,7 @@ public class StinkyPoo : MonoBehaviour
     public void StinkyBugTakeDamage(float damage){
         health -= damage;
         if(health <= 0){
+            Instantiate(stinkyPooCorpse, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }
     }
