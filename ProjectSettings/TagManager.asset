@@ -13,6 +13,7 @@ TagManager:
   - Obstacles
   - enemyPart
   - ScreenShake
+  - DebuffBug
   layers:
   - Default
   - TransparentFX

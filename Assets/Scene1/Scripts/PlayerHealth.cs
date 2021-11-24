@@ -8,6 +8,8 @@ public class PlayerHealth:MonoBehaviour{
 
     public float health = 100f;
 
+    public GameObject GameOverMenu;
+
     public Slider slider;
     private shake shake;
 
@@ -37,14 +39,10 @@ public class PlayerHealth:MonoBehaviour{
 
 
     void Die(){
-        health = 0f;
+        slider.value = 0;
         Timer.instance.endTimer();
+        GameOverMenu.GetComponent<Stats>().image.gameObject.SetActive(true);
+        GameOverMenu.SetActive(true);
         Destroy(gameObject);
-
-        SceneManager.LoadScene(4);
     }
-
-
-
-
 }

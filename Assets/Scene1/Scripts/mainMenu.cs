@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class mainMenu : MonoBehaviour
 {
     public void play(){
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(1);
     }
 

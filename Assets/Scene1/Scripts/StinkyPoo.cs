@@ -52,7 +52,7 @@ public class StinkyPoo : MonoBehaviour
 
 
         if(cooldown <= 0 && bombPlanted){
-            cooldown = 10f;
+            cooldown = 5f;
         }
 
         if(collided){

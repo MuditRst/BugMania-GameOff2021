@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float health = 25f;
+    float health = 25f;
+
+    public bool cantakeAoeDamage = true;
 
     float maxHealth = 25f;
 
@@ -28,6 +30,11 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         healthBar.setHealth(health,maxHealth);
+
+        if(cantakeAoeDamage == false){
+            StartCoroutine(cantakeAoeDamageCoolDown());
+        }
+
 
         if(audioSrc.clip == null)
         {
@@ -70,4 +77,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    IEnumerator cantakeAoeDamageCoolDown(){
+        yield return new WaitForSeconds(20f);
+        cantakeAoeDamage = true;
+    }
 }

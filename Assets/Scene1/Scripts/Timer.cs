@@ -40,6 +40,10 @@ public class Timer:MonoBehaviour
         TimeGoing = false;
     }
 
+    public string TimePlayed(){
+        return timerText.ToString();
+    }
+
     private IEnumerator UpdateTimer()
     {
         while(TimeGoing){

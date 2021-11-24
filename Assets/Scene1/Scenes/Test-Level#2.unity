@@ -543,6 +543,7 @@ GameObject:
   - component: {fileID: 22957783}
   - component: {fileID: 22957784}
   - component: {fileID: 22957785}
+  - component: {fileID: 22957786}
   m_Layer: 8
   m_Name: door-closed
   m_TagString: Obstacles
@@ -628,7 +629,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.007685609, y: -0.013834104}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -639,8 +640,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.15}
+  m_Size: {x: 0.23685636, y: 0.17766821}
   m_EdgeRadius: 0
+--- !u!114 &22957786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22957782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a8564a94943874180d029e20b5a508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &24841973
 GameObject:
   m_ObjectHideFlags: 0
@@ -15728,6 +15741,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 911437557}
+    - target: {fileID: 3359871753844896820, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
+      propertyPath: GameOverMenu
+      value: 
+      objectReference: {fileID: 1723329683}
     - target: {fileID: 3359871753844896821, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -47113,14 +47130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 131965455, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 131965455, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4156568151401505672, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -47223,6 +47232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
+--- !u!1 &1723329683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232692384770078397, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
+  m_PrefabInstance: {fileID: 1723329682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1739174742
 PrefabInstance:
   m_ObjectHideFlags: 0

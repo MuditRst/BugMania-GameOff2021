@@ -19,8 +19,8 @@ public class bomb : MonoBehaviour
         {
             anim.SetBool("isExplosion", true);
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
+            anim.SetBool("isExplode", false);
             Destroy(gameObject,0.5f);
-            //anim.SetBool("isExplode", false);
         }
     }
 }

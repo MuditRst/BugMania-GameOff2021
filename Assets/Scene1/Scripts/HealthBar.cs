@@ -11,11 +11,11 @@ public class HealthBar : MonoBehaviour{
 
 
     public void setHealth(float health,float maxHealth){
+        slider.value = health;
+        slider.maxValue = maxHealth;
 
         slider.gameObject.SetActive(health < maxHealth);
 
-        slider.value = health;
-        slider.maxValue = 10f;
     }
 
     void Update(){

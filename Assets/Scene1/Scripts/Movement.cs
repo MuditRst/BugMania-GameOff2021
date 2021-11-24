@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
 
     private Sprite originalsprite;
 
+    [SerializeField]
     private bool isAoe;
 
 
@@ -21,6 +22,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         //Timer.instance.BeginTimer();
+        isAoe = true;
         originalsprite = GetComponent<SpriteRenderer>().sprite;
     }
 
@@ -50,7 +52,6 @@ public class Movement : MonoBehaviour
                 bugs(this.GetComponent<SpriteRenderer>().sprite.name);
                 StartCoroutine(ChargeCooldown());
             }
-            
         }
 
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -86,10 +87,7 @@ public class Movement : MonoBehaviour
         if(bugsprite == "1"){
             //AOE SLICE;
             if(isAoe){
-
-
-
-                StartCoroutine(AoeSlice());
+                AoeDamage();
             }
             //Debug.Log("Mantits");
         }
@@ -113,6 +111,19 @@ public class Movement : MonoBehaviour
 
     }
 
+    private void AoeDamage(){
+        Collider2D[] collider2D = Physics2D.OverlapCircleAll(transform.position, 1.5f);
+
+        foreach(Collider2D c in collider2D){
+            if(c.tag == "Enemy" && c.GetComponent<Enemy>().cantakeAoeDamage){
+                c.GetComponent<Enemy>().TakeDamage(10f);
+                c.GetComponent<Enemy>().cantakeAoeDamage  = false;
+            }
+        }
+        StartCoroutine(AoeSlice());
+    }
+
+
     IEnumerator DashCooldown(){
         yield return new WaitForSeconds(0.1f);
         speed = 5f;
@@ -125,9 +136,11 @@ public class Movement : MonoBehaviour
 
 
     IEnumerator AoeSlice(){
-        yield return new WaitForSeconds(30f);
+        isAoe = false;
+        yield return new WaitForSeconds(10f);
         isAoe = true;
     }
+
 
 }
 

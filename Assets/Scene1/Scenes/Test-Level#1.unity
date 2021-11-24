@@ -7077,6 +7077,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &486194335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232692384770078397, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
+  m_PrefabInstance: {fileID: 4156568151721628362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &510446024
 GameObject:
   m_ObjectHideFlags: 0
@@ -9897,14 +9902,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
-    - target: {fileID: 3359871753844896818, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3359871753844896820, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 1428272310}
+    - target: {fileID: 3359871753844896820, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
+      propertyPath: GameOverMenu
+      value: 
+      objectReference: {fileID: 486194335}
     - target: {fileID: 3359871753844896821, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9947,18 +9952,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3359871753844896821, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3359871753844896822, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3359871754116480587, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3359871755768182787, guid: 3f38e8a6424fb8240b7048ee1e60f7a8, type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19584,7 +19577,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1519806245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 961ea0c00f633b842a8ecdd40adeb28c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85a8564a94943874180d029e20b5a508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1520588598
@@ -27682,38 +27675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_Color.g
-      value: 0.79428625
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 643522219, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_FontData.m_AlignByGeometry
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4156568151401505672, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -27730,10 +27691,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 462036011}
-    - target: {fileID: 4156568151740317782, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317783, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
