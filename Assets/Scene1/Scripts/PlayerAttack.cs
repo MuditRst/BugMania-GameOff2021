@@ -19,17 +19,18 @@ public class PlayerAttack : MonoBehaviour{
 
     void Update(){
         if(Input.GetButton("Fire1") && CanAttack){
-            Attack(enemy);   
+            Attack(enemy); 
+            CanAttack = false;  
         }
     }
 
     void Attack(GameObject other){
         if(other.gameObject.tag == "StinkyPoo" && Vector2.Distance(transform.position, other.transform.position) <= 1f){
-            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(2.5f);
+            other.GetComponent<StinkyPoo>().StinkyBugTakeDamage(10f);
         }
         if(other.gameObject.tag == "DebuffBug" && Vector2.Distance(transform.position, other.transform.position) <= 1f){
-            other.GetComponent<Debuff>().DebuffBugTakeDamage(1f);
+            other.GetComponent<Debuff>().DebuffBugTakeDamage(10f);
         }
-        other.GetComponent<Enemy>().TakeDamage(1f);
+        other.GetComponent<Enemy>().TakeDamage(10f);
     }
 }

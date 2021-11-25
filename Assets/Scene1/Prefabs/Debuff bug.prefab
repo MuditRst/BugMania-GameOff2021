@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
+  DebuffCorpse: {fileID: 8472628501770177289, guid: 91681d9428a07024e9e2fa3de51b44d7, type: 3}
   healthBar: {fileID: 1650065125466530229}
 --- !u!114 &-3166304609389852514
 MonoBehaviour:

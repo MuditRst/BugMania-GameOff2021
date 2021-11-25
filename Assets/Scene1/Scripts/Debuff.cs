@@ -10,6 +10,8 @@ public class Debuff : MonoBehaviour
     bool isInRange = false;
     GameObject player;
 
+    public GameObject DebuffCorpse;
+
     public HealthBar healthBar;
 
     float DBhealth = 5f;
@@ -36,6 +38,7 @@ public class Debuff : MonoBehaviour
         Debug.Log("Hit!");
         DBhealth -= damage;
         if(DBhealth <= 0){
+            Instantiate(DebuffCorpse, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

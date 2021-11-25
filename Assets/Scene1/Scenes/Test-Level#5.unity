@@ -2248,17 +2248,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &125736828 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8375320273111822707, guid: cfa3f4a6e95ce0845bd0be1bf89f177f, type: 3}
-  m_PrefabInstance: {fileID: 1120504731}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d907d98f8f47a4fbf4cf7bf1c13271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &126406582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6352,6 +6341,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6666667, y: 0.6666667}
   m_EdgeRadius: 0
+--- !u!114 &367558022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1650065125466530229, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
+  m_PrefabInstance: {fileID: 2663243913887303122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d907d98f8f47a4fbf4cf7bf1c13271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369092468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6963,7 +6963,7 @@ PrefabInstance:
     - target: {fileID: 1286964591619021969, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 125736828}
+      objectReference: {fileID: 1648185307}
     - target: {fileID: 3643241287348418599, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: slider
       value: 
@@ -22208,14 +22208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1805099218}
     m_Modifications:
-    - target: {fileID: 1286964591619021969, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 125736828}
-    - target: {fileID: 3643241287348418599, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 669459566}
     - target: {fileID: 7938801834110310876, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -24094,6 +24086,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317783, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697069451681247300, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26270,6 +26266,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1494933262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1650065125466530229, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
+  m_PrefabInstance: {fileID: 2015052879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d907d98f8f47a4fbf4cf7bf1c13271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1505944299
 GameObject:
   m_ObjectHideFlags: 0
@@ -28268,6 +28275,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1648185307 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1650065125466530229, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
+  m_PrefabInstance: {fileID: 402366837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d907d98f8f47a4fbf4cf7bf1c13271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651049685
 GameObject:
   m_ObjectHideFlags: 0
@@ -34203,7 +34221,7 @@ PrefabInstance:
     - target: {fileID: 1286964591619021969, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 125736828}
+      objectReference: {fileID: 1494933262}
     - target: {fileID: 3643241287348418599, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: slider
       value: 
@@ -37126,7 +37144,7 @@ PrefabInstance:
     - target: {fileID: 1286964591619021969, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 125736828}
+      objectReference: {fileID: 367558022}
     - target: {fileID: 3643241287348418599, guid: aa3b4aea8eabdfe46b917363fef2f7e5, type: 3}
       propertyPath: slider
       value: 

@@ -6,10 +6,15 @@ public class bomb : MonoBehaviour
 {
 
     Animator anim;
+    bool collided;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        if(collided == false){
+            Destroy(gameObject, 1.5f);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -17,6 +22,7 @@ public class bomb : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
+            collided = true;
             anim.SetBool("isExplosion", true);
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
             anim.SetBool("isExplode", false);

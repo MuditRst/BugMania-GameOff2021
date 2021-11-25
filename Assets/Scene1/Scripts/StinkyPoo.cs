@@ -31,6 +31,8 @@ public class StinkyPoo : MonoBehaviour
 
     public GameObject stinkyPoo;
 
+    Vector2 bPos;
+
     void Start()
     {
         startingPosition = this.transform.position;
@@ -44,6 +46,10 @@ public class StinkyPoo : MonoBehaviour
         stinkyPooHealthBar.setHealth(health,maxHealth);
         if(GameObject.FindGameObjectWithTag("BombIndicator")){
             Destroy(GameObject.FindGameObjectWithTag("BombIndicator"),0.5f);
+        }
+
+        if(GameObject.FindGameObjectWithTag("BombIndicator")){
+            bPos = GameObject.FindGameObjectWithTag("BombIndicator").transform.position;
         }
 
         if(Vector2.Distance(player.transform.position,this.transform.position) >= GetComponent<CircleCollider2D>().radius/2){
@@ -76,9 +82,12 @@ public class StinkyPoo : MonoBehaviour
             bombShown++;
         }
 
+
+        
+
         if(cooldown <= 0 && collided){
             yield return new WaitForSeconds(cooldown);
-            Instantiate(stinkyPoo, player.transform.position, Quaternion.identity);
+            Instantiate(stinkyPoo, bPos, Quaternion.identity);
             bombPlanted = true;
             bombShown = 0;
         }else{
