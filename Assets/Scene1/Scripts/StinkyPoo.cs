@@ -108,7 +108,13 @@ public class StinkyPoo : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "Player"){
-            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(25f);
+            //col.gameObject.GetComponent<PlayerHealth>().TakeDamage(25f);
+            if(col.gameObject.GetComponent<Movement>().isdashing == false && col.gameObject.GetComponent<Movement>().ischarging == false){
+                PlayerPrefs.SetFloat("Health",PlayerPrefs.GetFloat("Health") - 25f);
+                col.gameObject.GetComponent<PlayerHealth>().particle.Play();
+                col.gameObject.GetComponent<PlayerHealth>().particle.transform.position = col.gameObject.transform.position;
+                col.gameObject.GetComponent<PlayerHealth>().shake.CamShake();
+            }
             Instantiate(stinkyPooCorpse, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }

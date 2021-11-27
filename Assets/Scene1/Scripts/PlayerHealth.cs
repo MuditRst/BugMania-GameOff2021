@@ -6,36 +6,42 @@ using UnityEngine.UI;
 
 public class PlayerHealth:MonoBehaviour{
 
-    public float health = 100f;
+    static float health = 100f;
 
     public GameObject GameOverMenu;
 
     public Slider slider;
-    private shake shake;
+    public shake shake;
 
-    ParticleSystem particle;
-
-
+    public ParticleSystem particle;
+    
     void Start(){
-        particle = GetComponent<ParticleSystem>();
         slider.maxValue = health;
+        particle = GetComponent<ParticleSystem>();
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<shake>();
     }
     void Update(){
-        slider.value = health;
+        slider.value = PlayerPrefs.GetFloat("Health");
+
+        if (PlayerPrefs.GetFloat("Health") <= 0f)
+        {
+            Die();
+        }
     }
-    public void TakeDamage(float amount)
+
+    
+    /*public void TakeDamage(float amount)
     {
         particle.Play();
         health -= amount;
         shake.CamShake();
-        if (health <= 0f)
+        if (PlayerPrefs.GetFloat("Health") <= 0f)
         {
             Die();
         }
 
         Debug.Log("Player Health: " + health);
-    }
+    }*/
 
 
     void Die(){

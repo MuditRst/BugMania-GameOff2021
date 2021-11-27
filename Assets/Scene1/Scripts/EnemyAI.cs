@@ -24,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     protected bool isIdle = false;
 
     public AIPath aiPath;
+    public bool stunned;
 
     Vector2 dir;
 
@@ -40,6 +41,11 @@ public class EnemyAI : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if(stunned){
+            aiPath.canMove = false;
+            StartCoroutine(stunnedCoolDown());
+        }
+
         if(timer <= 10 && isIdle == false && Vector2.Distance(transform.position, target.transform.position) < 12f && aiPath.canMove){
             StartCoroutine(CoolDown());
             aiPath.canMove = true;
@@ -93,6 +99,12 @@ public class EnemyAI : MonoBehaviour
         idleTimer += Time.deltaTime;; 
         yield return new WaitForSeconds(3f);
         
+    }
+
+    IEnumerator stunnedCoolDown(){
+        yield return new WaitForSeconds(3f);
+        aiPath.canMove = true;
+        stunned = false;
     }
 
 }

@@ -13,7 +13,7 @@ public class bomb : MonoBehaviour
         anim = GetComponent<Animator>();
 
         if(collided == false){
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 0.5f);
         }
     }
 
@@ -24,7 +24,10 @@ public class bomb : MonoBehaviour
         {
             collided = true;
             anim.SetBool("isExplosion", true);
-            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
+            //other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
+            PlayerPrefs.SetFloat("Health", PlayerPrefs.GetFloat("Health") - 10f);
+            other.gameObject.GetComponent<PlayerHealth>().particle.Play();
+            other.gameObject.GetComponent<PlayerHealth>().shake.CamShake();
             anim.SetBool("isExplode", false);
             Destroy(gameObject,0.5f);
         }

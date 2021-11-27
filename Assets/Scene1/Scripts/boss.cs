@@ -30,7 +30,7 @@ public class boss : MonoBehaviour
                 if(Vector2.Distance(transform.position, player.transform.position) > 1f){
                     transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed*Time.deltaTime);
                 }else{
-                    player.GetComponent<PlayerHealth>().TakeDamage(attack);
+                    //player.GetComponent<PlayerHealth>().TakeDamage(attack);
                 }
                 Debug.Log("Hit Player");
                 StartCoroutine(MoveCoolDown());

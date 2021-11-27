@@ -26,7 +26,14 @@ public class EnemyAttack : EnemyAI
     void Attack()
     {
         StartCoroutine(AttackWait());
-        player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+        //player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+        if(!player.GetComponent<Movement>().isdashing && !player.GetComponent<Movement>().ischarging){
+            PlayerPrefs.SetFloat("Health", PlayerPrefs.GetFloat("Health") - attackDamage);
+            player.GetComponent<PlayerHealth>().particle.Play();
+            player.GetComponent<PlayerHealth>().shake.CamShake();
+        }
+
+
         StartCoroutine(Idle());
         Stop();
         aiPath.canMove = false;

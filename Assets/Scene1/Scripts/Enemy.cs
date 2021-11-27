@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Enemy : MonoBehaviour
 {
     float health = 25f;
 
     public bool cantakeAoeDamage = true;
+    public bool cantakeChargeDamage = true;
 
     float maxHealth = 25f;
 
     public HealthBar healthBar;
 
-    AudioSource audioSrc;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip deathSound;
     ParticleSystem particles;
 
     public GameObject corpse;
@@ -24,21 +27,19 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        audioSource.clip = deathSound;
         particles = GetComponent<ParticleSystem>();
-        audioSrc = this.GetComponent<AudioSource>();
     }
     void Update()
     {
         healthBar.setHealth(health,maxHealth);
 
-        if(cantakeAoeDamage == false){
-            StartCoroutine(cantakeAoeDamageCoolDown());
+        if(cantakeChargeDamage){
+            StartCoroutine(cantakeChargeDamageCoolDown());
         }
 
-
-        if(audioSrc.clip == null)
-        {
-            Debug.Log("No Audio!!!");
+        if(cantakeAoeDamage == false){
+            StartCoroutine(cantakeAoeDamageCoolDown());
         }
     }
 
@@ -61,20 +62,28 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        StartCoroutine(playAudio());
         Instantiate(corpse, transform.position, transform.rotation);
         if(RandomDDrop() >= 1){
             Instantiate(drop, transform.position, transform.rotation);
         }
+        StartCoroutine(playDeathAudio());
+    }
+
+    IEnumerator playDeathAudio(){
+    
+        audioSource.Play();
+        
+        while (audioSource.isPlaying){
+            this.transform.position = new Vector3(this.transform.position.x-99f, this.transform.position.y-90f, this.transform.position.z - 99f);
+            yield return null;
+        }
+        
         Destroy(gameObject);
     }
 
-    IEnumerator playAudio(){
-        audioSrc.Play();
-
-        while(audioSrc.isPlaying){
-            yield return null;
-        }
+    IEnumerator cantakeChargeDamageCoolDown(){
+        yield return new WaitForSeconds(5f);
+        cantakeChargeDamage = true;
     }
 
     IEnumerator cantakeAoeDamageCoolDown(){

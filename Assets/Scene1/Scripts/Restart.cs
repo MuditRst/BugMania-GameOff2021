@@ -16,6 +16,7 @@ public class Restart : MonoBehaviour
     void Update(){
         if(Input.GetKeyDown(KeyCode.R)){
             image.gameObject.SetActive(false);
+            PlayerPrefs.SetFloat("Health",100f);
             SceneManager.LoadScene(sceneIndex);
         }
     }
