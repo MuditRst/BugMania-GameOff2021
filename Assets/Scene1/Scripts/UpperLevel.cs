@@ -27,6 +27,11 @@ public class UpperLevel : MonoBehaviour
                 upperLevel.SetActive(true);
                 isUpperLevel = true;
                 collided = false;
+                GameObject[] objs = GameObject.FindGameObjectsWithTag("corpse");
+                foreach (GameObject obj in objs)
+                {
+                Destroy(obj);
+                }
             }else if(isUpperLevel && player.GetComponent<SpriteRenderer>().sprite.name == "2" && Vector2.Distance(player.transform.position, transform.position) < 0.25f){
                 if(Input.GetKeyDown(KeyCode.Q)){
                     groundLevel.SetActive(true);

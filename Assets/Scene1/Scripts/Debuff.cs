@@ -17,10 +17,13 @@ public class Debuff : MonoBehaviour
     float DBhealth = 5f;
     float DBmaxHealth = 5f;
 
+    public AudioSource audioSource;
+
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
         healthBar.setHealth(DBhealth,DBmaxHealth);
+        audioSource.Play();
     }
 
     void Update(){

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7240679378875007765}
   m_Layer: 0
   m_Name: fodder_corpse
-  m_TagString: Untagged
+  m_TagString: corpse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

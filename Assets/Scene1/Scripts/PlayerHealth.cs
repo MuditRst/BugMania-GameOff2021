@@ -19,6 +19,7 @@ public class PlayerHealth:MonoBehaviour{
         slider.maxValue = health;
         particle = GetComponent<ParticleSystem>();
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<shake>();
+        GameObject.FindGameObjectWithTag("Music").GetComponent<GameAudio>().PlayMusic();
     }
     void Update(){
         slider.value = PlayerPrefs.GetFloat("Health");
@@ -28,20 +29,6 @@ public class PlayerHealth:MonoBehaviour{
             Die();
         }
     }
-
-    
-    /*public void TakeDamage(float amount)
-    {
-        particle.Play();
-        health -= amount;
-        shake.CamShake();
-        if (PlayerPrefs.GetFloat("Health") <= 0f)
-        {
-            Die();
-        }
-
-        Debug.Log("Player Health: " + health);
-    }*/
 
 
     void Die(){

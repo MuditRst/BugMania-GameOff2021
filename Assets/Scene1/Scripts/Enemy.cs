@@ -41,6 +41,8 @@ public class Enemy : MonoBehaviour
         if(cantakeAoeDamage == false){
             StartCoroutine(cantakeAoeDamageCoolDown());
         }
+
+        
     }
 
     public void TakeDamage(float amount)

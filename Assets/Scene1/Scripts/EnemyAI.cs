@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     protected GameObject target;
 
     protected bool isIdle = false;
+    [SerializeField] private AudioSource bug_walking;
 
     public AIPath aiPath;
     public bool stunned;
@@ -41,8 +42,15 @@ public class EnemyAI : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if(aiPath.velocity.x > 0.1f){
+            if(bug_walking.isPlaying == false){
+                bug_walking.Play();
+            }
+        }
+
         if(stunned){
             aiPath.canMove = false;
+            bug_walking.Stop();
             StartCoroutine(stunnedCoolDown());
         }
 
@@ -53,6 +61,7 @@ public class EnemyAI : MonoBehaviour
         }else{
             Stop();
             aiPath.canMove = false;
+            bug_walking.Stop();
             if(idleTimer > 5 && isIdle == true){
                timer = 0;
                isIdle = false;
@@ -84,7 +93,7 @@ public class EnemyAI : MonoBehaviour
     void look(){
         dir = aiPath.desiredVelocity;
 
-        transform.right = dir;
+        transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f);
     }
 
     IEnumerator CoolDown()

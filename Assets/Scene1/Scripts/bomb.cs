@@ -8,12 +8,15 @@ public class bomb : MonoBehaviour
     Animator anim;
     bool collided;
 
+    AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
 
         if(collided == false){
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, audioSource.clip.length/2);
         }
     }
 
@@ -22,6 +25,9 @@ public class bomb : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
+            if(!audioSource.isPlaying){
+                audioSource.Play();
+            }
             collided = true;
             anim.SetBool("isExplosion", true);
             //other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
@@ -29,7 +35,7 @@ public class bomb : MonoBehaviour
             other.gameObject.GetComponent<PlayerHealth>().particle.Play();
             other.gameObject.GetComponent<PlayerHealth>().shake.CamShake();
             anim.SetBool("isExplode", false);
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject,audioSource.clip.length - 0.2f);
         }
     }
 }

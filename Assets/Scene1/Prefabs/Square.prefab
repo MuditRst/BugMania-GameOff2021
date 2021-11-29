@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdashing: 0
   ischarging: 0
+  DashSprite: {fileID: -8817166262397465492, guid: 12097d4fe72e5da4dac5944bd3880780, type: 3}
+  AoeSprite: {fileID: 3562008593719690791, guid: 12097d4fe72e5da4dac5944bd3880780, type: 3}
   speed: 5
   rb: {fileID: 3359871753844896823}
   sprite:
@@ -174,7 +176,7 @@ MonoBehaviour:
   GameOverMenu: {fileID: 0}
   slider: {fileID: 0}
   shake: {fileID: 0}
-  particle: {fileID: 0}
+  particle: {fileID: 1059991435}
 --- !u!198 &1059991435
 ParticleSystem:
   m_ObjectHideFlags: 0

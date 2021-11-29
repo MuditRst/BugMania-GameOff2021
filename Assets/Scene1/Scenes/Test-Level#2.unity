@@ -3849,7 +3849,7 @@ Transform:
   - {fileID: 1192525095}
   - {fileID: 53024276}
   m_Father: {fileID: 384731427}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &243538318
 GameObject:
@@ -6280,13 +6280,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 867239086}
-  - {fileID: 1723329684}
   - {fileID: 622030099}
   - {fileID: 238887062}
   - {fileID: 1361467049}
+  - {fileID: 714368035}
   - {fileID: 1153377122}
   - {fileID: 8156606982543528653}
-  - {fileID: 714368035}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10500,7 +10499,7 @@ Transform:
   - {fileID: 1289014003}
   - {fileID: 1048972239}
   m_Father: {fileID: 384731427}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622655531
 GameObject:
@@ -12385,7 +12384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 384731427}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723718758
 GameObject:
@@ -23410,7 +23409,7 @@ Transform:
   - {fileID: 130648692}
   - {fileID: 1289266564}
   m_Father: {fileID: 384731427}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362231803
 GameObject:
@@ -30815,7 +30814,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 384731427}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4156568151401505672, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -30843,7 +30842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317783, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317783, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -30922,11 +30921,6 @@ PrefabInstance:
 --- !u!1 &1723329683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 232692384770078397, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
-  m_PrefabInstance: {fileID: 1723329682}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1723329684 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4156568151740317783, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
   m_PrefabInstance: {fileID: 1723329682}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1739174742

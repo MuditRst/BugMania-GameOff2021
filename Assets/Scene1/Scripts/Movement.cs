@@ -10,6 +10,10 @@ public class Movement : MonoBehaviour
     [SerializeField] public bool isdashing;
     [SerializeField] public bool ischarging;
 
+    public Sprite DashSprite;
+
+    public Sprite AoeSprite;
+
 
     public float speed = 5f;
     public Rigidbody2D rb;
@@ -38,10 +42,12 @@ public class Movement : MonoBehaviour
 
         if(Input.GetButton("shift") && Input.GetButton("1")){
             this.GetComponent<SpriteRenderer>().sprite = sprite[0];
+            UIicons.sprite = AoeSprite;
         }
 
         if(Input.GetButton("shift") && Input.GetButton("2")){
             this.GetComponent<SpriteRenderer>().sprite = sprite[1];
+            UIicons.sprite = DashSprite;
         }
 
         if(Input.GetButton("shift") && Input.GetButton("3")){

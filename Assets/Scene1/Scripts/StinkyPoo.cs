@@ -27,14 +27,19 @@ public class StinkyPoo : MonoBehaviour
     [SerializeField]
     bool canMove,collided,bombPlanted;
 
+    public AudioSource bombSound;
+
     private Vector3 startingPosition;
 
     public GameObject stinkyPoo;
 
     Vector2 bPos;
 
+    AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         startingPosition = this.transform.position;
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -76,14 +81,12 @@ public class StinkyPoo : MonoBehaviour
 
     IEnumerator BombCoolDown()
     {
+        
 
         if(cooldown <= 0.35f && bombShown <= 1 && collided){
             Instantiate(bombIndicator,player.transform.position,Quaternion.identity);
             bombShown++;
         }
-
-
-        
 
         if(cooldown <= 0 && collided){
             yield return new WaitForSeconds(cooldown);
@@ -95,8 +98,11 @@ public class StinkyPoo : MonoBehaviour
             bombPlanted = false;
         }
 
+
         //Debug.Log(cooldown);
     }
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -116,8 +122,21 @@ public class StinkyPoo : MonoBehaviour
                 col.gameObject.GetComponent<PlayerHealth>().shake.CamShake();
             }
             Instantiate(stinkyPooCorpse, transform.position, transform.rotation);
-            Destroy(this.gameObject);
+            //if(Vector2.Distance(player.transform.position, this.transform.position) <= 1f)
+            StartCoroutine(playDeathAudio());
         }
+    }
+
+    IEnumerator playDeathAudio(){
+    
+        audioSource.Play();
+        
+        while (audioSource.isPlaying){
+            this.transform.position = new Vector3(this.transform.position.x-99f, this.transform.position.y-90f, this.transform.position.z - 99f);
+            yield return null;
+        }
+        
+        Destroy(this.gameObject);
     }
 
     public void StinkyBugTakeDamage(float damage){

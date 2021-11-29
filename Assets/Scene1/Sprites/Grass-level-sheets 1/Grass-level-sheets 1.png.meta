@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: f25a3b6223bbe6b4caf678034671d278
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2863260367358947363
+    second: Grass-level-sheets 10
+  - first:
+      213: -1809750803776023549
+    second: Grass-level-sheets 1_0
+  - first:
+      213: -6238811284985533504
+    second: Grass-level-sheets 1_1
+  - first:
+      213: 8998201883403901827
+    second: Grass-level-sheets 1_2
+  - first:
+      213: 4229688394799331857
+    second: Grass-level-sheets 1_3
+  - first:
+      213: -6748284426441341573
+    second: Grass-level-sheets 1_4
+  - first:
+      213: 1422201262471887029
+    second: Grass-level-sheets 1_5
+  - first:
+      213: -1449156676899230272
+    second: Grass-level-sheets 1_6
+  - first:
+      213: -2971773390070762982
+    second: Grass-level-sheets 1_7
+  - first:
+      213: -4052065693593552291
+    second: Grass-level-sheets 1_8
+  - first:
+      213: -1067624318807983945
+    second: Grass-level-sheets 1_9
+  - first:
+      213: -808684826676856902
+    second: Grass-level-sheets 1_10
+  - first:
+      213: 1175720033170123780
+    second: Grass-level-sheets 1_11
+  - first:
+      213: 5025662156504106860
+    second: Grass-level-sheets 1_12
+  - first:
+      213: -3904579522769633761
+    second: Grass-level-sheets 1_13
+  - first:
+      213: -7808901008669084826
+    second: Grass-level-sheets 1_14
+  - first:
+      213: 3194420976638816074
+    second: Grass-level-sheets 1_15
+  - first:
+      213: 5912277739674202699
+    second: Grass-level-sheets 1_16
+  - first:
+      213: 7348875521795036456
+    second: Grass-level-sheets 1_17
+  - first:
+      213: -4171032844352108882
+    second: Grass-level-sheets 1_18
+  - first:
+      213: 6363268144155095718
+    second: Grass-level-sheets 1_19
+  - first:
+      213: -690132381506116628
+    second: Grass-level-sheets 1_20
+  - first:
+      213: -6741912630165223974
+    second: Grass-level-sheets 1_21
+  - first:
+      213: -8013417069470543657
+    second: Grass-level-sheets 1_22
+  - first:
+      213: -2644404756715746773
+    second: Grass-level-sheets 1_23
+  - first:
+      213: 6827910360408588934
+    second: Grass-level-sheets 1_24
+  - first:
+      213: 1471974803790293949
+    second: Grass-level-sheets 1_25
+  - first:
+      213: -3893615521342675159
+    second: Grass-level-sheets 1_26
+  - first:
+      213: -7992426634492131318
+    second: Grass-level-sheets 1_27
+  - first:
+      213: -5856284295281009591
+    second: Grass-level-sheets 1_28
+  - first:
+      213: -548688294226559469
+    second: Grass-level-sheets 1_29
+  - first:
+      213: -8311533751790418373
+    second: Grass-level-sheets 1_30
+  - first:
+      213: 1831503525380231365
+    second: Grass-level-sheets 1_31
+  - first:
+      213: -465141678958106621
+    second: Grass-level-sheets 1_32
+  - first:
+      213: -4007283980599811994
+    second: Grass-level-sheets 1_33
+  - first:
+      213: 5590650180106292072
+    second: Grass-level-sheets 1_34
+  - first:
+      213: -5152817349895183612
+    second: Grass-level-sheets 1_35
+  - first:
+      213: -3121315277865642764
+    second: Grass-level-sheets 1_36
+  - first:
+      213: -1208372491434815481
+    second: Grass-level-sheets 1_37
+  - first:
+      213: 4498067183056337599
+    second: Grass-level-sheets 1_38
+  - first:
+      213: 1569794728567582797
+    second: Grass-level-sheets 1_39
+  - first:
+      213: 8244175733217057414
+    second: Grass-level-sheets 1_40
+  - first:
+      213: 8771985181865224652
+    second: Grass-level-sheets 1_41
+  - first:
+      213: -824086150121842571
+    second: Grass-level-sheets 1_42
+  - first:
+      213: -1748418381442128801
+    second: Grass-level-sheets 1_43
+  - first:
+      213: -3554179396806984355
+    second: Grass-level-sheets 1_44
+  - first:
+      213: -8306483348014512679
+    second: Grass-level-sheets 1_45
+  - first:
+      213: 4844939825865208995
+    second: Grass-level-sheets 1_46
+  - first:
+      213: 6752069238853413395
+    second: Grass-level-sheets 1_47
+  - first:
+      213: 941521711059727780
+    second: Grass-level-sheets 1_48
+  - first:
+      213: 3319709427495463877
+    second: Grass-level-sheets 1_49
+  - first:
+      213: -612005541896410833
+    second: Grass-level-sheets 1_50
+  - first:
+      213: 2699790923013290237
+    second: Grass-level-sheets 1_51
+  - first:
+      213: -5961143375088506052
+    second: Grass-level-sheets 1_52
+  - first:
+      213: 4964233663764528027
+    second: Grass-level-sheets 1_53
+  - first:
+      213: -3316252267409407016
+    second: Grass-level-sheets 1_54
+  - first:
+      213: 8855322772447234991
+    second: Grass-level-sheets 1_55
+  - first:
+      213: 1541411888499107575
+    second: Grass-level-sheets 1_56
+  - first:
+      213: 3683599636732982036
+    second: Grass-level-sheets 1_57
+  - first:
+      213: -4230851450825958045
+    second: Grass-level-sheets 1_58
+  - first:
+      213: 5132240887150564834
+    second: Grass-level-sheets 1_59
+  - first:
+      213: 4146502752645535809
+    second: Grass-level-sheets 1_60
+  - first:
+      213: 3857851344732032105
+    second: Grass-level-sheets 1_61
+  - first:
+      213: -7983970944793290681
+    second: Grass-level-sheets 1_62
+  - first:
+      213: -3638892629919875914
+    second: Grass-level-sheets 1_63
+  - first:
+      213: -1872425698103777547
+    second: Grass-level-sheets 1_64
+  - first:
+      213: -7758939095212949761
+    second: Grass-level-sheets 1_65
+  - first:
+      213: 3184160491166431089
+    second: Grass-level-sheets 1_66
+  - first:
+      213: 2233496780205452855
+    second: Grass-level-sheets 1_67
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304d3f08b3972e6e0800000000000000
+      internalID: -1809750803776023549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 178
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb2db1e03a4b69a0800000000000000
+      internalID: -6238811284985533504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b5a8d30f800ec70800000000000000
+      internalID: 8998201883403901827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 178
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c9ae61174952a0800000000000000
+      internalID: -6748284426441341573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 162
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd29892eaf83ebe0800000000000000
+      internalID: -1449156676899230272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 162
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12bfdbc8d322c6d0800000000000000
+      internalID: -2971773390070762982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 162
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab77daa4f69f6c4f0800000000000000
+      internalID: -808684826676856902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 162
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c6a64142ff05010800000000000000
+      internalID: 1175720033170123780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e3d048c9520d9c0800000000000000
+      internalID: -3904579522769633761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663f61ce7e531a390800000000000000
+      internalID: -7808901008669084826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fec9714fcd45c20800000000000000
+      internalID: 3194420976638816074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42fab69741ac0250800000000000000
+      internalID: 5912277739674202699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825182fd9537cf560800000000000000
+      internalID: 7348875521795036456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6c7e52ab38d16c0800000000000000
+      internalID: -4171032844352108882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a27ceeb9aede4850800000000000000
+      internalID: 6363268144155095718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3655861482c66f0800000000000000
+      internalID: -690132381506116628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 130
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5484cde2aef62a0800000000000000
+      internalID: -6741912630165223974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d01829d1af9ac090800000000000000
+      internalID: -8013417069470543657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6820d560c4c91ce50800000000000000
+      internalID: 6827910360408588934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9272c66005917f9c0800000000000000
+      internalID: -3893615521342675159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b85b0e7baf59d40800000000000000
+      internalID: 5590650180106292072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_38
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 34
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba3aed65485c6e30800000000000000
+      internalID: 4498067183056337599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 34
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a5c4c5622396270800000000000000
+      internalID: 8244175733217057414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 34
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5781bad33024094f0800000000000000
+      internalID: -824086150121842571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_44
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dbe416ba40daec0800000000000000
+      internalID: -3554179396806984355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b2da01fa3c54da0800000000000000
+      internalID: -5961143375088506052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_54
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d38a7f022e4af1d0800000000000000
+      internalID: -3316252267409407016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6ad8222f1346510800000000000000
+      internalID: 1541411888499107575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_59
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5585425e1693740800000000000000
+      internalID: 5132240887150564834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass-level-sheets 1_66
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177fec7a819603c20800000000000000
+      internalID: 3184160491166431089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
