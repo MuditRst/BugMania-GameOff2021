@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
         isAoe = true;
         originalsprite = GetComponent<SpriteRenderer>().sprite;
         UIicons = UIicons.GetComponent<SpriteRenderer>();
+        UIicons.sprite = DashSprite;
     }
 
     void Update()

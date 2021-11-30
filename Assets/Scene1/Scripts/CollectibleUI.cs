@@ -19,7 +19,7 @@ public class CollectibleUI : MonoBehaviour
 
     void LateUpdate()
     {
-        text.text = "Orbs Collected:" + PlayerPrefs.GetInt(ObjectID).ToString();
+        text.text = "Assence Collected:" + PlayerPrefs.GetInt(ObjectID).ToString();
     }
 
 
