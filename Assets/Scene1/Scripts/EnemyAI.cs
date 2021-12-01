@@ -7,8 +7,6 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
-
-    PatrolAi patrol;
     float speed = 4f;
 
     protected float timer=0f;
@@ -68,25 +66,13 @@ public class EnemyAI : MonoBehaviour
                idleTimer = 0;
                aiPath.canMove = true;
             }
-            //Debug.Log("Idle Timer: "+  idleTimer);
         }
 
-        //Debug.Log(timer);
     }
-
-
-    /*public void move(Vector2 direction){
-        rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
-        
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f);
-    }*/
 
     public void Stop(){
         StartCoroutine(Idle());
         rb.velocity = Vector2.zero;
-        /*if(Vector2.Distance(target.transform.position, transform.position) < 5f){
-            GetComponentInChildren<EnemyAttack>().SpawnHerd();
-        }*/
     }
 
 

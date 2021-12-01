@@ -30,7 +30,6 @@ public class bomb : MonoBehaviour
             }
             collided = true;
             anim.SetBool("isExplosion", true);
-            //other.gameObject.GetComponent<PlayerHealth>().TakeDamage(10f);
             PlayerPrefs.SetFloat("Health", PlayerPrefs.GetFloat("Health") - 10f);
             other.gameObject.GetComponent<PlayerHealth>().particle.Play();
             other.gameObject.GetComponent<PlayerHealth>().shake.CamShake();

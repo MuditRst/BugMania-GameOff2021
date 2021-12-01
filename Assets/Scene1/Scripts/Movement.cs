@@ -5,33 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-    //public Transform spawnPoint;
 
     [SerializeField] public bool isdashing;
     [SerializeField] public bool ischarging;
 
+    public bool gotBeetle,gotMantis;
     public Sprite DashSprite;
 
     public Sprite AoeSprite;
+    public Animator animator;
 
 
     public float speed = 5f;
     public Rigidbody2D rb;
     public Sprite[] sprite;
-    //public Animator anim;
     Vector2 movement;
 
-    private Sprite originalsprite;
+    [SerializeField] private Sprite originalsprite;
 
     [SerializeField]
     private bool isAoe;
 
     public SpriteRenderer UIicons;
 
+    public GameObject dash;
+
+    public Transform dashTransform;
+
+    public AudioSource dashSound;
+
 
     void Start()
     {
-        //Timer.instance.BeginTimer();
+        PlayerPrefs.SetString("Scene",SceneManager.GetActiveScene().name);
+        
         isAoe = true;
         originalsprite = GetComponent<SpriteRenderer>().sprite;
         UIicons = UIicons.GetComponent<SpriteRenderer>();
@@ -40,8 +47,12 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetButton("shift") && Input.GetButton("0")){
+            animator.SetBool("isBeetle", false);
+            this.GetComponent<SpriteRenderer>().sprite = originalsprite;
+        }
 
-        if(Input.GetButton("shift") && Input.GetButton("1")){
+        if(Input.GetButton("shift") && Input.GetButton("1") && gotMantis){
             this.GetComponent<SpriteRenderer>().sprite = sprite[0];
             UIicons.sprite = AoeSprite;
         }
@@ -51,12 +62,9 @@ public class Movement : MonoBehaviour
             UIicons.sprite = DashSprite;
         }
 
-        if(Input.GetButton("shift") && Input.GetButton("3")){
+        if(Input.GetButton("shift") && Input.GetButton("3") && gotBeetle){
             this.GetComponent<SpriteRenderer>().sprite = sprite[2];
-        }
-
-        if(Input.GetButton("shift") && Input.GetButton("0")){
-            this.GetComponent<SpriteRenderer>().sprite = originalsprite;
+            animator.SetBool("isBeetle",true);
         }
 
         if(Input.GetButton("SpecialKey")){
@@ -73,26 +81,57 @@ public class Movement : MonoBehaviour
 
         look();
 
+        
+
+        if(Input.GetKey(KeyCode.Q) && GetComponent<SpriteRenderer>().sprite.name == "GaryTheGrasshopper_22"){
+            StartCoroutine(DashAnimation());    
+        }else{
+            animator.SetBool("Dash",false);
+        }
+
+        
+
+        if(Input.GetKey(KeyCode.Q) && GetComponent<SpriteRenderer>().sprite.name == "BottleTheBeetle_0")
+            StartCoroutine(ChargeAnimation());
+        else
+            animator.SetBool("Charge",false);
+
+        GameObject[] g = GameObject.FindGameObjectsWithTag("dash");
+
+        foreach(GameObject d in g)
+            Destroy(d,0.05f);
+
+        if(isdashing){
+            Instantiate(dash,dashTransform.position,Quaternion.identity);
+            dashSound.Play();
+        }
+
+        if(ischarging){
+            dashSound.Play();
+        }
+
+        
+
         if(isAoe){
             Color temp = UIicons.color;
             temp.a += 1f;
             UIicons.color = temp;
-            //Debug.Log(UIicons.color);
+            
         }else{
             Color tmp = UIicons.color;
             tmp.a = 0.5f;
             UIicons.color = tmp;
-            //Debug.Log(UIicons.color);
+            
         }
     }
 
     void FixedUpdate(){
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        
     }
 
     
     void OnCollisionEnter2D(Collision2D col){
-        
     }
 
 
@@ -104,39 +143,36 @@ public class Movement : MonoBehaviour
     void bugs(string bugsprite){
 
 
-        //mantice
+        //mantis
 
         if(bugsprite == "1"){
-            //AOE SLICE;
             if(isAoe){
                 Debug.Log("AOE SLICE");
                 AoeDamage();
             }
-            //Debug.Log("Mantits");
+            
         }
 
-        //beetle
+        
 
-        if(bugsprite == "3"){
-            /* speed = 12f */
+        if(bugsprite == "BottleTheBeetle_0"){
+            
             speed = 12f;
             rb.MovePosition(rb.position + (Input.GetAxisRaw("Horizontal") > 0?new Vector2(movement.x,0):new Vector2(0,movement.y)) * (speed) * Time.fixedDeltaTime);
-            //Debug.Log("Bottle");
+            ChargeDamage();
+        
         }
 
-        //grasshopper
+        
 
-        if(bugsprite == "4"){
+        if(bugsprite == "GaryTheGrasshopper_22"){
             speed = 15f;
             rb.MovePosition(rb.position + (Input.GetAxisRaw("Horizontal") > 0?new Vector2(movement.x-5f,0):new Vector2(0,movement.y-5f)) * (speed) * Time.fixedDeltaTime);
-            ChargeDamage();
-            //Debug.Log("asshopper");
         }
 
     }
 
     private void ChargeDamage(){
-        //Debug.Log("Charging");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 1f);
         
 
@@ -184,10 +220,14 @@ public class Movement : MonoBehaviour
         isAoe = true;
     }
 
+    IEnumerator ChargeAnimation(){
+        animator.SetBool("Charge",true);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length+animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+    }
+
+    IEnumerator DashAnimation(){
+        animator.SetBool("Dash",true);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length+animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+    }
 
 }
-
-
-/* Rush
-this.transform.position = new Vector2(Input.GetAxisRaw("Horizontal") > 0?this.transform.position.x+0.09f:this.transform.position.x-0.09f,0f);
- */

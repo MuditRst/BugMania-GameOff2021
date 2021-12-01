@@ -30818,15 +30818,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4156568151401505672, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151401505672, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317779, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156568151740317779, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4156568151740317782, guid: 8594528faa1d7ba4089e9efe046c43b1, type: 3}
       propertyPath: m_Camera

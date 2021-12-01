@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
@@ -30,7 +31,6 @@ public class Tutorial : MonoBehaviour
     {
         startingText = true;
         gameMechanicsText = true;
-        //exitText = true;
         player.SetActive(false);
         canvas.gameObject.SetActive(false);
         StartingText();
@@ -39,6 +39,11 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
         if(startingText == false && gameMechanicsText==true)
             GameMechanicsText();
         if(!gameMechanicsText && GameObject.FindGameObjectsWithTag("Enemy").Length == 0){
@@ -118,6 +123,8 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(30f);
         Exit.SetActive(true);
     }
+
+
 }
 
 

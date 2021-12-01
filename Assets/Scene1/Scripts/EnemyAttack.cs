@@ -14,6 +14,7 @@ public class EnemyAttack : EnemyAI
     public int HerdCount;
 
     GameObject player;
+    public Animator anim;
 
     
 
@@ -26,7 +27,6 @@ public class EnemyAttack : EnemyAI
     void Attack()
     {
         StartCoroutine(AttackWait());
-        //player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         if(!player.GetComponent<Movement>().isdashing && !player.GetComponent<Movement>().ischarging){
             PlayerPrefs.SetFloat("Health", PlayerPrefs.GetFloat("Health") - attackDamage);
             player.GetComponent<PlayerHealth>().particle.Play();
@@ -62,13 +62,9 @@ public class EnemyAttack : EnemyAI
     }
 
     IEnumerator AttackWait(){
+        anim.SetBool("Attack", true);
         yield return new WaitForSeconds(timeBetweenAttacks + Time.deltaTime);
+        anim.SetBool("Attack", false);
     }
-
-    /*public IEnumerator destroyHerd(){
-        yield return new WaitForSeconds(5f);
-        Destroy(EnemyHerd);
-        Debug.Log("Destroyed Herd");
-    }*/
 
 }

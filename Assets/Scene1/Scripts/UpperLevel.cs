@@ -11,8 +11,11 @@ public class UpperLevel : MonoBehaviour
     public GameObject groundLevel;
     public GameObject upperLevel;
 
+    public Canvas canvas;
+
     void Start()
     {
+        canvas.gameObject.SetActive(false);
         collided = false;
         upperLevel.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
@@ -22,7 +25,8 @@ public class UpperLevel : MonoBehaviour
     {
         if (collided)
         {
-            if(!isUpperLevel && Input.GetKeyDown(KeyCode.Q) && player.GetComponent<SpriteRenderer>().sprite.name == "2" && Vector2.Distance(player.transform.position, transform.position) < 0.25f){
+            canvas.gameObject.SetActive(true);
+            if(!isUpperLevel && Input.GetKeyDown(KeyCode.Q) && player.GetComponent<SpriteRenderer>().sprite.name == "3" && Vector2.Distance(player.transform.position, transform.position) < 0.25f){
                 groundLevel.SetActive(false);
                 upperLevel.SetActive(true);
                 isUpperLevel = true;
@@ -32,7 +36,8 @@ public class UpperLevel : MonoBehaviour
                 {
                 Destroy(obj);
                 }
-            }else if(isUpperLevel && player.GetComponent<SpriteRenderer>().sprite.name == "2" && Vector2.Distance(player.transform.position, transform.position) < 0.25f){
+                
+            }else if(isUpperLevel && player.GetComponent<SpriteRenderer>().sprite.name == "3" && Vector2.Distance(player.transform.position, transform.position) < 0.25f){
                 if(Input.GetKeyDown(KeyCode.Q)){
                     groundLevel.SetActive(true);
                     upperLevel.SetActive(false);

@@ -18,7 +18,7 @@ public class Stats : MonoBehaviour
     }
 
     void Update(){
-        text.text = "GameOver!" + "\n" + "Orbs Collected: " + PlayerPrefs.GetInt(ObjectID).ToString() + "\n" + "Time Played: " + Timer.instance.timerText.text;
+        text.text = "GameOver!" + "\n" + "Assence Collected: " + PlayerPrefs.GetInt(ObjectID).ToString() + "\n" + "Time Played: " + Timer.instance.timerText.text;
     }
 
 }

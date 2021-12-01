@@ -28065,6 +28065,7 @@ GameObject:
   - component: {fileID: 1638418590}
   - component: {fileID: 1638418589}
   - component: {fileID: 1638418591}
+  - component: {fileID: 1638418592}
   m_Layer: 8
   m_Name: door-closed
   m_TagString: Untagged
@@ -28163,6 +28164,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.15}
   m_EdgeRadius: 0
+--- !u!114 &1638418592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638418588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a8564a94943874180d029e20b5a508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1643313006
 PrefabInstance:
   m_ObjectHideFlags: 0

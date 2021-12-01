@@ -15,7 +15,7 @@ public class TorchLightScript : MonoBehaviour
         intensity = l.intensity;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         StartCoroutine(CoolDown());

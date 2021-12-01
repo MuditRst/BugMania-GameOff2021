@@ -14,7 +14,6 @@ public class LightScript : MonoBehaviour
         Outerradius = l.pointLightOuterRadius;
     }
 
-    // Update is called once per frame
     void Update()
     {
         StartCoroutine(CoolDown());

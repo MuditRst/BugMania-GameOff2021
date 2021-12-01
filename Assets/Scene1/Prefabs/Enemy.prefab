@@ -487,6 +487,7 @@ MonoBehaviour:
   attackDamage: 10
   EnemyHerd: {fileID: 1189100047623448806, guid: 50abdad842bf35c4cb7b0697d79776c9, type: 3}
   HerdCount: 0
+  anim: {fileID: 0}
 --- !u!1 &6658786588898212310
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +525,7 @@ Transform:
   m_GameObject: {fileID: 6658786588898212310}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 6.28, y: 1.85, z: 0}
-  m_LocalScale: {x: 0.73090005, y: 0.73090005, z: 1}
+  m_LocalScale: {x: 0.48362538, y: 0.48362538, z: 0.6616849}
   m_Children:
   - {fileID: 6658786587731182169}
   - {fileID: 2092631831}
@@ -572,7 +573,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 21300000, guid: 37d6ed35ef41ad04296bf95e706201c0, type: 3}
+  m_Sprite: {fileID: -3846847830162284179, guid: 60d94c33eee315b418fa7999f5ae7c4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -600,7 +601,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0585938, y: 1.1757812}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -625,7 +626,7 @@ MonoBehaviour:
   cantakeChargeDamage: 1
   healthBar: {fileID: 808612470723013012}
   audioSource: {fileID: 1139943581}
-  deathSound: {fileID: 8300000, guid: 22865db1f6bde75468de5b5589a99672, type: 3}
+  deathSound: {fileID: 8300000, guid: a467d54b7dfb9a54eb8da794fa68c212, type: 3}
   corpse: {fileID: 7344657129627347287, guid: 501365153f434c14aa27a5dd17d1d1f8, type: 3}
   drop: {fileID: 3590713266145209443, guid: 3d9f65d8c06f0a6429628a3dec07683a, type: 3}
 --- !u!50 &6658786588898212315

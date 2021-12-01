@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 
 public class Enemy : MonoBehaviour
 {
-    float health = 25f;
+    float health = 35f;
 
     public bool cantakeAoeDamage = true;
     public bool cantakeChargeDamage = true;

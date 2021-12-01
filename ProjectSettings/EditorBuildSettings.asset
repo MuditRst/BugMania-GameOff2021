@@ -15,6 +15,24 @@ EditorBuildSettings:
     path: Assets/Scene1/Scenes/Tutorial.unity
     guid: 10e59161482a8fb489212f3912a703b7
   - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-1.unity
+    guid: a02b9331dfcba8a4285533b3a16dc179
+  - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-2.unity
+    guid: 802d7b37e1aa286419758adb4f99854c
+  - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-3.unity
+    guid: eec7e3057a8f32e43a4fb9bd32a74348
+  - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-4.unity
+    guid: 7a712e5f7f331fb44ab0edc7cf59dd98
+  - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-5.unity
+    guid: 28fd4409d7a54fe40a9d2d44219c3b54
+  - enabled: 1
+    path: Assets/Scene1/Scenes/Grass-Level-6.unity
+    guid: 79f5a36aa15529145b730c8252d3e294
+  - enabled: 1
     path: Assets/Scene1/Scenes/Test-Level#1.unity
     guid: 4a803813aeaae6846905f0c4415be93d
   - enabled: 1
@@ -29,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene1/Scenes/Test-Level#5.unity
     guid: 031b0fe238db1ad44988d0faa1ab9898
+  - enabled: 1
+    path: Assets/Scene1/Scenes/endCred.unity
+    guid: facd000a0bf643149a33ed2bddf73e2f
   m_configObjects: {}

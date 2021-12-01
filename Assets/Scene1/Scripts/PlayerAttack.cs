@@ -9,8 +9,10 @@ public class PlayerAttack : MonoBehaviour{
     [SerializeField]
     bool CanAttack;
 
+    public Animator animator;
+
     void OnTriggerEnter2D(Collider2D other){
-        //Debug.Log(other.gameObject.tag);
+        
         if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "StinkyPoo" || other.gameObject.tag == "DebuffBug"){
             enemy = other.gameObject;
             CanAttack = true;
@@ -21,6 +23,17 @@ public class PlayerAttack : MonoBehaviour{
         if(Input.GetButton("Fire1") && CanAttack){
             Attack(enemy); 
             CanAttack = false;  
+        }
+        if(Input.GetButton("Fire1")){
+            animator.SetBool("Attack", true);
+        }else{
+            animator.SetBool("Attack", false);
+        }
+
+        if(Input.GetButton("Fire1") && GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().sprite.name == "BottleTheBeetle_0"){
+            animator.SetBool("beetleAttack", true);
+        }else{
+            animator.SetBool("beetleAttack", false);
         }
     }
 
