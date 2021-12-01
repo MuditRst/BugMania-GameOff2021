@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5906798747675567051}
   - component: {fileID: 5384575112711358195}
   - component: {fileID: 5990101764692254341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grass-level-sheets 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: -7791846003077448417, guid: a55a6d1d40c0d39499012207996da7a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4894,7 +4894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8534979106669225531}
   - component: {fileID: 4450797231258385775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

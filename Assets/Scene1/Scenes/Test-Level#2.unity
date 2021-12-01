@@ -14151,6 +14151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 808156080}
   - component: {fileID: 808156079}
+  - component: {fileID: 808156081}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -14198,6 +14199,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808156081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808156078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4e1f245befdd04ab321d40e6fe7fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808565586
 GameObject:
   m_ObjectHideFlags: 0
@@ -38345,6 +38358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2821917362227410159, guid: cfaa70034bc7ad84386eaeb8b6bf1976, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6743641369183257402, guid: cfaa70034bc7ad84386eaeb8b6bf1976, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -38401,7 +38418,8 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 244484981}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2156544736178132581, guid: cfaa70034bc7ad84386eaeb8b6bf1976, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfaa70034bc7ad84386eaeb8b6bf1976, type: 3}
 --- !u!1001 &5709385110971566824
 PrefabInstance:
