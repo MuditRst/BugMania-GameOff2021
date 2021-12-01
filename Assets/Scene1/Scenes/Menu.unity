@@ -503,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8231796ac223d184095e0177c8604319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectPrefab: {fileID: 3590713266145209443, guid: 3d9f65d8c06f0a6429628a3dec07683a, type: 3}
   audioSource: {fileID: 1209839274}
 --- !u!82 &1209839273
 AudioSource:

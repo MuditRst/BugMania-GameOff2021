@@ -52,7 +52,7 @@ public class Movement : MonoBehaviour
             this.GetComponent<SpriteRenderer>().sprite = originalsprite;
         }
 
-        if(Input.GetButton("shift") && Input.GetButton("1") && gotMantis){
+        if(Input.GetButton("shift") && Input.GetButton("1") && PlayerPrefs.GetInt("Mantis") == 1){
             this.GetComponent<SpriteRenderer>().sprite = sprite[0];
             UIicons.sprite = AoeSprite;
         }
@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
             UIicons.sprite = DashSprite;
         }
 
-        if(Input.GetButton("shift") && Input.GetButton("3") && gotBeetle){
+        if(Input.GetButton("shift") && Input.GetButton("3") &&  PlayerPrefs.GetInt("Beetle") == 1){
             this.GetComponent<SpriteRenderer>().sprite = sprite[2];
             animator.SetBool("isBeetle",true);
         }

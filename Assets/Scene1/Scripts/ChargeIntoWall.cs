@@ -17,7 +17,7 @@ public class ChargeIntoWall : MonoBehaviour
 
     void Update()
     {
-        if (collided && player.GetComponent<Movement>().speed > 10f && player.GetComponent<SpriteRenderer>().sprite.name == "4")
+        if (collided && player.GetComponent<Movement>().speed > 10f && player.GetComponent<SpriteRenderer>().sprite.name == "BottleTheBeetle_0")
         {
             collided = false;
             anim.SetTrigger("shake");

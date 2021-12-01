@@ -487,7 +487,7 @@ MonoBehaviour:
   attackDamage: 10
   EnemyHerd: {fileID: 1189100047623448806, guid: 50abdad842bf35c4cb7b0697d79776c9, type: 3}
   HerdCount: 0
-  anim: {fileID: 0}
+  anim: {fileID: 2110478477}
 --- !u!1 &6658786588898212310
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 1859106349}
   - component: {fileID: 1139943581}
   - component: {fileID: 1208898162}
+  - component: {fileID: 2110478477}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -525,7 +526,7 @@ Transform:
   m_GameObject: {fileID: 6658786588898212310}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 6.28, y: 1.85, z: 0}
-  m_LocalScale: {x: 0.48362538, y: 0.48362538, z: 0.6616849}
+  m_LocalScale: {x: 0.4836254, y: 0.4836254, z: 0.6616849}
   m_Children:
   - {fileID: 6658786587731182169}
   - {fileID: 2092631831}
@@ -5713,3 +5714,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &2110478477
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658786588898212310}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 710763e60fbc91445808b1f5216c4d76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

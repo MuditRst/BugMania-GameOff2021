@@ -17,9 +17,9 @@ public class canAquire : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "Player"){
             if(isMantis){
-                col.gameObject.GetComponent<Movement>().gotMantis = true;
+                PlayerPrefs.SetInt("Mantis",1);
             }else if(isBeetle){
-                col.gameObject.GetComponent<Movement>().gotBeetle = true;
+                PlayerPrefs.SetInt("Beetle",1);
             }
             Destroy(this.gameObject);
         }

@@ -62,9 +62,9 @@ public class EnemyAttack : EnemyAI
     }
 
     IEnumerator AttackWait(){
-        anim.SetBool("Attack", true);
+        anim.SetBool("canAttack", true);
         yield return new WaitForSeconds(timeBetweenAttacks + Time.deltaTime);
-        anim.SetBool("Attack", false);
+        anim.SetBool("canAttack", false);
     }
 
 }

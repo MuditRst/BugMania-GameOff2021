@@ -90,6 +90,7 @@ public class EnemyAI : MonoBehaviour
 
     public IEnumerator Idle()
     {
+        gameObject.GetComponentInChildren<Animator>().SetBool("canAttack", false);
         isIdle = true;
         idleTimer += Time.deltaTime;; 
         yield return new WaitForSeconds(3f);

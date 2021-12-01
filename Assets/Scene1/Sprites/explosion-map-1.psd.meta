@@ -203,9 +203,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 128
-        height: 128
+        y: 15
+        width: 87
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: explosion-map-1_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
-        width: 128
-        height: 128
+        x: 131
+        y: 0
+        width: 130
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: explosion-map-1_2
       rect:
         serializedVersion: 2
-        x: 255
-        y: 16
-        width: 128
-        height: 128
+        x: 500
+        y: 0
+        width: 145
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: explosion-map-1_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 16
-        width: 128
-        height: 128
+        x: 670
+        y: 0
+        width: 135
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,48 +278,6 @@ TextureImporter:
       bones: []
       spriteID: e83b0c087397319c0800000000000000
       internalID: -3957686368238259314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: explosion-map-1_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 16
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 757b0a50b3db776a0800000000000000
-      internalID: -6451479879989807273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: explosion-map-1_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 16
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d469ca0ab912dc40800000000000000
-      internalID: 5535515178827343063
       vertices: []
       indices: 
       edges: []
