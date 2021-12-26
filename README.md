@@ -99,7 +99,7 @@ Room for improvement:
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by Supergiant's **Hades** and Developer Digital's **Hotline Miami** and [other games]().
+- This project was inspired by Supergiant's [**Hades**](https://store.steampowered.com/app/1145360/Hades/) and Developer Digital's [**Hotline Miami**](https://store.steampowered.com/app/219150/Hotline_Miami/) and [other games]().
 - Many thanks to
 
 
