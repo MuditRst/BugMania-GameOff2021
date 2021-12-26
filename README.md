@@ -65,12 +65,13 @@ To work with our source code
 
 To play our Demo [Build]()
 - Download the .zip folder.
-- Extract it with a .rar unpacker. Consult [FAQ]() for errors.
+- Extract it with a .rar unpacker. Consult [FAQ](#faq) for errors.
 - Run the `GameOff2021.exe` executable.
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: <mark>_on hold_.</mark> 
 
+<sub>Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).</sub>
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
