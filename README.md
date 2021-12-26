@@ -54,9 +54,14 @@ displaying and tracking stats.
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+To work with our source code
+> ```clone the repository```, verify own ```Unity version``` and use your preferred IDE to make changes.
+
+To play our Demo [Build]()
+- Download the .zip folder
+- Extract it with a .rar unpacker. Consult [FAQ]() for errors.
+- Run the `GameOff2021.exe` executable.
 
 
 ## Usage
