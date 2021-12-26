@@ -56,7 +56,7 @@ displaying and tracking stats.
 ## Setup
 
 To work with our source code
-> ```clone the repository```, verify own ```Unity version``` and use your preferred IDE to make changes.
+> **clone the repository**, verify own `Unity version` and use your preferred IDE to make changes.
 
 To play our Demo [Build]()
 - Download the .zip folder
