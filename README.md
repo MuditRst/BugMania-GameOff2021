@@ -11,7 +11,7 @@
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
+* [Roadmap](#roadmap)
 * [FAQ](#faq)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
@@ -74,31 +74,33 @@ Project is: <mark>_on hold_.</mark>
 Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).
 ```
 
-## Room for Improvement
+## Roadmap
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Add background to Main Menu.
+- Complete the implementation of the 3rd playable bug [Morris the Mantis]
+- Add a 'Win-game' condition after crossing the 12th level door.
+- Level design. Variations on the paths the player can take.
+
+Room for improvement:
+- Animations on health and collectible pickups.
+- Adding variations to the bg music.
+- Improving on the placeholder assets in the dungeon levels.
 
 ## FAQ
 
-#### Question 1
-Answer 1
-
-#### Question 2
-Answer 2
-
+#### Files are missing after opening the .zip file with WinRar.
+>Use [7zip](https://www.7-zip.org/) to open/extract the archive.
+#### I cannot seem to pause the game by pressing Esc.
+>The pause script is 'bugged' in some of the levels. Die to the mobs and press 'R' to restart, or Alt+F4.
+#### I cannot seem to finish the game. Help!
+>As of now you loop back to the start of the dungeon levels once you cross the 12th stage. A *'Win-game'* condition is part of the future roadmap development.
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was inspired by Supergiant's **Hades** and Developer Digital's **Hotline Miami** and [other games]().
+- Many thanks to
 
 
 ## Contact
