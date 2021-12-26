@@ -90,7 +90,7 @@ Give credit here.
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Find us on [Discord](https://discord.gg/xqVNCP6njY). Come hang out with us!
 
 
 <!-- Optional -->
