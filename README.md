@@ -19,7 +19,7 @@
 
 
 ## General Information 
-- Submission for GitHub Game Off 2021. [`Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
+- Submission for GitHub Game Off 2021. [Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
 
 - Read GDD for more info.
 
@@ -29,9 +29,6 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
 
 | Technologies      | Description |
 | ----------- | ----------- |
