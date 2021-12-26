@@ -70,7 +70,7 @@ To play our Demo [Build]()
 ## Project Status
 Project is: <mark>_on hold_.</mark> 
 
-```js
+```css
 Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).
 ```
 
