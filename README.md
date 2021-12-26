@@ -40,13 +40,13 @@
 
 
 ## Features
-List the ready features here:
 - 12 unique levels created for fast-paced beat-up-em action.
 - Implemented standardised patrol A.I for enemies, which
 is based on the concept of *Dijkstra's shortest path algorithm*.
 - Intuitive and seamless U.I for Menu systems and
 displaying and tracking stats.
 
+[More info on core mechanics and gameplay system features here]().
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
