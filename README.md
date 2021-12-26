@@ -19,7 +19,7 @@
 
 
 ## General Information 
-- Submission for GitHub Game Off 2021. [Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
+- Submission for GitHub Game Off 2021. [`Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
 
 - Read GDD for more info.
 
@@ -41,9 +41,11 @@
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- 12 unique levels created for fast-paced beat-up-em action.
+- Implemented standardised patrol A.I for enemies, which
+is based on the concept of *Dijkstra's shortest path algorithm*.
+- Intuitive and seamless U.I for Menu systems and
+displaying and tracking stats.
 
 
 ## Screenshots
