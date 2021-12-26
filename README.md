@@ -10,7 +10,6 @@
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [FAQ](#faq)
@@ -71,7 +70,9 @@ To play our Demo [Build]()
 ## Project Status
 Project is: <mark>_on hold_.</mark> 
 
-<sub>Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).</sub>
+```js
+Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).
+```
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
