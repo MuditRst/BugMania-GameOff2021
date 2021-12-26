@@ -13,6 +13,7 @@
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
+* [FAQ](#faq)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
@@ -56,20 +57,16 @@ displaying and tracking stats.
 ## Setup
 
 To work with our source code
-> **clone the repository**, verify own `Unity version` and use your preferred IDE to make changes.
+```bash
+>   clone the repository
+>   verify your own Unity version ['v2019.4.0'] 
+>   use your preferred IDE to make changes.
+```
 
 To play our Demo [Build]()
-- Download the .zip folder
+- Download the .zip folder.
 - Extract it with a .rar unpacker. Consult [FAQ]() for errors.
 - Run the `GameOff2021.exe` executable.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
 
 ## Project Status
 Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
@@ -85,6 +82,14 @@ Room for improvement:
 To do:
 - Feature to be added 1
 - Feature to be added 2
+
+## FAQ
+
+#### Question 1
+Answer 1
+
+#### Question 2
+Answer 2
 
 
 ## Acknowledgements
