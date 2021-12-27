@@ -47,10 +47,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButton("shift") && Input.GetButton("0")){
-            animator.SetBool("isBeetle", false);
-            this.GetComponent<SpriteRenderer>().sprite = originalsprite;
-        }
 
         if(Input.GetButton("shift") && Input.GetButton("1") && PlayerPrefs.GetInt("Mantis") == 1){
             this.GetComponent<SpriteRenderer>().sprite = sprite[0];
@@ -58,7 +54,8 @@ public class Movement : MonoBehaviour
         }
 
         if(Input.GetButton("shift") && Input.GetButton("2")){
-            this.GetComponent<SpriteRenderer>().sprite = sprite[1];
+            animator.SetBool("isBeetle", false);
+            this.GetComponent<SpriteRenderer>().sprite = originalsprite;
             UIicons.sprite = DashSprite;
         }
 

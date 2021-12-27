@@ -48,9 +48,9 @@ EditorBuildSettings:
     path: Assets/Scene1/Scenes/Test-Level#5.unity
     guid: 031b0fe238db1ad44988d0faa1ab9898
   - enabled: 1
-    path: Assets/Scene1/Scenes/BreakWallScene.unity
-    guid: 6fe7e90a3ffa3074c8f78a154281f330
-  - enabled: 1
     path: Assets/Scene1/Scenes/endCred.unity
     guid: facd000a0bf643149a33ed2bddf73e2f
+  - enabled: 1
+    path: Assets/Scene1/Scenes/BreakWallScene.unity
+    guid: 6fe7e90a3ffa3074c8f78a154281f330
   m_configObjects: {}
