@@ -15,7 +15,7 @@
 * [FAQ](#faq)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+* [License](#license)
 
 
 ## General Information 
@@ -48,17 +48,12 @@ displaying and tracking stats.
 
 [More info on core mechanics and gameplay system features here]().
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
 ## Setup
 
 To work with our source code
 ```bash
 >   clone the repository
->   verify your own Unity version ['v2019.4.0'] 
+>   verify your own Unity version ['v2020.3.21f1'] 
 >   use your preferred IDE to make changes.
 ```
 
@@ -76,9 +71,9 @@ Not updating the repository until the Rating round of the gameJam is over (3rd J
 
 ## Roadmap
 To do:
-- Add background to Main Menu.
+- [x] Add background to Main Menu.
+- [x] Add a 'Win-game' condition after crossing the 12th level door.
 - Complete the implementation of the 3rd playable bug [Morris the Mantis]
-- Add a 'Win-game' condition after crossing the 12th level door.
 - Level design. Variations on the paths the player can take.
 
 Room for improvement:
@@ -92,17 +87,19 @@ Room for improvement:
 >Use [7zip](https://www.7-zip.org/) to open/extract the archive.
 #### I cannot seem to pause the game by pressing Esc.
 >The pause script is 'bugged' in some of the levels. Die to the mobs and press 'R' to restart, or Alt+F4.
+#### I cannot seem to get stuck inside the hidden levels.
+>The trigger collider gets messed up sometimes for moving up and down the grasshopper-specific hidden levels. Move back a few tiles, then return to that position and press the **Q** button.
 
 ## Acknowledgements
 Give credit here.
 - This project was inspired by Supergiant's [**Hades**](https://store.steampowered.com/app/1145360/Hades/) and Developer Digital's [**Hotline Miami**](https://store.steampowered.com/app/219150/Hotline_Miami/) and [other games]().
-- Many thanks to
+- Many thanks to our team
+
+    - [Mudit Rastogi](https://github.com/MuditRst) : For countless hours of playtesting, debugging and scripting all of our little friends in the game. [**LinkedIn**](https://www.linkedin.com/in/mudit-rastogi-6aa67118b/)
+    - [Shreyas Datta](https://github.com/ShreyasDatta) : For handling game design, art direction and QoL changes to the mechanics. [**LinkedIn**](https://www.linkedin.com/in/shreyas-datta-32bb041a1/) | [**Behance**](https://www.behance.net/shreyasdatta)
+    - Antariksh Mukherjee : For helping with assets, playtesting and giving our game some personality. [**LinkedIn**](https://www.linkedin.com/in/antariksh-mukherjee-5938921b5/) | [**Behance**](https://www.behance.net/SingularityDesigns)
+- Special thanks to Ayushman Chakraborty for the wonderful music in our game! [**Instagram**](https://www.instagram.com/a_floydian_slip/)
 
 
-## Contact
-Find us on [Discord](https://discord.gg/xqVNCP6njY). Come hang out with us!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
+## License
+ This project is open source and available under the [MIT License](https://github.com/ShreyasDatta/GameOff2021/blob/master/LICENSE).
