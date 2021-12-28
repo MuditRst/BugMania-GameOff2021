@@ -32,7 +32,7 @@
 
 | Technologies      | Description |
 | ----------- | ----------- |
-| [Unity](https://unity.com/) 2019.4.0     | Game engine using scripts in `C#`  to power our game      |
+| [Unity](https://unity.com/) 2020.3.21f1     | Game engine using scripts in `C#`  to power our game      |
 | Aseprite  v1.2.21| Primary tool used to make the Pixel art assets        |
 | Visual Studio Code 2020     | The preferred IDE for our project       |
 | Adobe Photoshop     | Finishing touches on effects and particles       |
@@ -75,8 +75,6 @@ Not updating the repository until the Rating round of the gameJam is over (3rd J
 ```
 
 ## Roadmap
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 To do:
 - Add background to Main Menu.
 - Complete the implementation of the 3rd playable bug [Morris the Mantis]
@@ -94,8 +92,6 @@ Room for improvement:
 >Use [7zip](https://www.7-zip.org/) to open/extract the archive.
 #### I cannot seem to pause the game by pressing Esc.
 >The pause script is 'bugged' in some of the levels. Die to the mobs and press 'R' to restart, or Alt+F4.
-#### I cannot seem to finish the game. Help!
->As of now you loop back to the start of the dungeon levels once you cross the 12th stage. A *'Win-game'* condition is part of the future roadmap development.
 
 ## Acknowledgements
 Give credit here.
