@@ -8,7 +8,6 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Roadmap](#roadmap)
@@ -97,8 +96,8 @@ Give credit here.
 
     - [Mudit Rastogi](https://github.com/MuditRst) : For countless hours of playtesting, debugging and scripting all of our little friends in the game. [**LinkedIn**](https://www.linkedin.com/in/mudit-rastogi-6aa67118b/)
     - [Shreyas Datta](https://github.com/ShreyasDatta) : For handling game design, art direction and QoL changes to the mechanics. [**LinkedIn**](https://www.linkedin.com/in/shreyas-datta-32bb041a1/) | [**Behance**](https://www.behance.net/shreyasdatta)
-    - Antariksh Mukherjee : For helping with assets, playtesting and giving our game some personality. [**LinkedIn**](https://www.linkedin.com/in/antariksh-mukherjee-5938921b5/) | [**Behance**](https://www.behance.net/SingularityDesigns)
-- Special thanks to Ayushman Chakraborty for the wonderful music in our game! [**Instagram**](https://www.instagram.com/a_floydian_slip/)
+    - **Antariksh Mukherjee** : For helping with assets, playtesting and giving our game some personality. [**LinkedIn**](https://www.linkedin.com/in/antariksh-mukherjee-5938921b5/) | [**Behance**](https://www.behance.net/SingularityDesigns)
+- Special thanks to **Ayushman Chakraborty** for the wonderful music in our game! [**Instagram**](https://www.instagram.com/a_floydian_slip/)
 
 
 ## License
