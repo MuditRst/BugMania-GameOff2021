@@ -6,13 +6,13 @@ public class Collectible : MonoBehaviour
 {
 
     private CollectibleID collectibleID;
-    AudioSource audioSource;
+    
+    public AudioClip audioClip;
+    
 
-
-    void Awake()
+    void Start()
     {
         collectibleID = GetComponent<CollectibleID>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,8 +20,8 @@ public class Collectible : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             PlayerPrefs.SetInt(collectibleID.ID,PlayerPrefs.GetInt(collectibleID.ID) + 1);
-            audioSource.Play();
-            Destroy(gameObject, audioSource.clip.length/2 - 0.32f);   
+            AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
+            Destroy(this.gameObject);   
         }
     }
 }

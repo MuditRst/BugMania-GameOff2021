@@ -13,7 +13,6 @@
 * [Roadmap](#roadmap)
 * [FAQ](#faq)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
 * [License](#license)
 
 
