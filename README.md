@@ -44,7 +44,7 @@ is based on the concept of *Dijkstra's shortest path algorithm*.
 - Intuitive and seamless U.I for Menu systems and
 displaying and tracking stats.
 
-[More info on core mechanics and gameplay system features here]().
+[More info on core mechanics and gameplay system features here](Bugmania-GDD.pdf).
 
 ## Setup
 
@@ -61,10 +61,10 @@ To play our Demo [Build]()
 - Run the `GameOff2021.exe` executable.
 
 ## Project Status
-Project is: <mark>_on hold_.</mark> 
+Project is: <mark>_completed for GameJam_.</mark> 
 
 ```css
-Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).
+Will work on future updates.
 ```
 
 ## Roadmap
