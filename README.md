@@ -19,7 +19,7 @@
 ## General Information 
 - Submission for GitHub Game Off 2021. [`Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
 
-- Read GDD for more info.
+- Read [GDD](#Bugmania-GDD.pdf) for more info.
 
 - Project made with `C#` on the `Unity` game engine, assets and visuals - `Asperite`, audio samples - `Adobe Audition`. [`Expanded on further`](#technologies-used)
 
