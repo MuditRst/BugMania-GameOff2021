@@ -8,20 +8,18 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
+* [Roadmap](#roadmap)
+* [FAQ](#faq)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+* [License](#license)
 
 
 ## General Information 
 - Submission for GitHub Game Off 2021. [`Check it out`](https://itch.io/jam/game-off-2021/rate/1301347)
 
-- Read GDD for more info.
+- Read [GDD](Bugmania-GDD.pdf) for more info.
 
 - Project made with `C#` on the `Unity` game engine, assets and visuals - `Asperite`, audio samples - `Adobe Audition`. [`Expanded on further`](#technologies-used)
 
@@ -32,7 +30,7 @@
 
 | Technologies      | Description |
 | ----------- | ----------- |
-| [Unity](https://unity.com/) 2019.4.0     | Game engine using scripts in `C#`  to power our game      |
+| [Unity](https://unity.com/) 2020.3.21f1     | Game engine using scripts in `C#`  to power our game      |
 | Aseprite  v1.2.21| Primary tool used to make the Pixel art assets        |
 | Visual Studio Code 2020     | The preferred IDE for our project       |
 | Adobe Photoshop     | Finishing touches on effects and particles       |
@@ -48,51 +46,58 @@ displaying and tracking stats.
 
 [More info on core mechanics and gameplay system features here]().
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+To work with our source code
+```bash
+>   clone the repository
+>   verify your own Unity version ['v2020.3.21f1'] 
+>   use your preferred IDE to make changes.
+```
 
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
+To play our Demo [Build]()
+- Download the .zip folder.
+- Extract it with a .rar unpacker. Consult [FAQ](#faq) for errors.
+- Run the `GameOff2021.exe` executable.
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: <mark>_on hold_.</mark> 
 
+```css
+Not updating the repository until the Rating round of the gameJam is over (3rd Jan 2022).
+```
 
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+## Roadmap
+To do:
+- [x] Add background to Main Menu.
+- [x] Add a 'Win-game' condition after crossing the 12th level door.
+- Complete the implementation of the 3rd playable bug [Morris the Mantis]
+- Level design. Variations on the paths the player can take.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Animations on health and collectible pickups.
+- Adding variations to the bg music.
+- Improving on the placeholder assets in the dungeon levels.
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
+## FAQ
 
+#### Files are missing after opening the .zip file with WinRar.
+>Use [7zip](https://www.7-zip.org/) to open/extract the archive.
+#### I cannot seem to pause the game by pressing Esc.
+>The pause script is 'bugged' in some of the levels. Die to the mobs and press 'R' to restart, or Alt+F4.
+#### I cannot seem to get stuck inside the hidden levels.
+>The trigger collider gets messed up sometimes for moving up and down the grasshopper-specific hidden levels. Move back a few tiles, then return to that position and press the **Q** button.
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was inspired by Supergiant's [**Hades**](https://store.steampowered.com/app/1145360/Hades/) and Developer Digital's [**Hotline Miami**](https://store.steampowered.com/app/219150/Hotline_Miami/) and [other games]().
+- Many thanks to our team
+
+    - [Mudit Rastogi](https://github.com/MuditRst) : For countless hours of playtesting, debugging and scripting all of our little friends in the game. [**LinkedIn**](https://www.linkedin.com/in/mudit-rastogi-6aa67118b/)
+    - [Shreyas Datta](https://github.com/ShreyasDatta) : For handling game design, art direction and QoL changes to the mechanics. [**LinkedIn**](https://www.linkedin.com/in/shreyas-datta-32bb041a1/) | [**Behance**](https://www.behance.net/shreyasdatta)
+    - **Antariksh Mukherjee** : For helping with assets, playtesting and giving our game some personality. [**LinkedIn**](https://www.linkedin.com/in/antariksh-mukherjee-5938921b5/) | [**Behance**](https://www.behance.net/SingularityDesigns)
+- Special thanks to **Ayushman Chakraborty** for the wonderful music in our game! [**Instagram**](https://www.instagram.com/a_floydian_slip/)
 
 
-## Contact
-Find us on [Discord](https://discord.gg/xqVNCP6njY). Come hang out with us!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
+## License
+ This project is open source and available under the [MIT License](https://github.com/ShreyasDatta/GameOff2021/blob/master/LICENSE).
